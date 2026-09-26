@@ -1,9 +1,9 @@
-﻿# 🎮 SpawnCamp — Free Gaming Platform
+﻿# 🎮 Spawncamp - Free Gaming Platform
 
 > Una consola de videojuegos gratuita directamente en tu navegador.  
 > Inspirada en la experiencia de PS5 y Xbox, construida con HTML5 puro.
 
-![SpawnCamp](https://img.shields.io/badge/status-live-4dfd63?style=for-the-badge)
+![Spawncamp](https://img.shields.io/badge/status-live-4dfd63?style=for-the-badge)
 ![HTML5](https://img.shields.io/badge/HTML5-solo%20archivo-E34F26?style=for-the-badge&logo=html5)
 ![License](https://img.shields.io/badge/licencia-MIT-blue?style=for-the-badge)
 
@@ -33,8 +33,10 @@
 | Juego | Género | Estado |
 |-------|--------|--------|
 | 🐍 Snake Matrix | Retro Arcade | ✅ Disponible |
-| 💥 Pixel Storm | Bullet Hell | ✅ Disponible |
-| 🚀 Más juegos... | — | 🔜 Próximamente |
+| 🚀 Pixel Storm | Bullet Hell | ✅ Disponible |
+| 💥 Bouncers | 4-player PvP | ✅ Disponible |
+| 🧧 Runecraft | Puzzle highscore | ✅ Disponible |
+| 🥊 Stick Fighter | Fighting game | ⌛ Work in progress... |
 
 ---
 
@@ -91,7 +93,7 @@ git clone https://github.com/Jeuri-Ddz/SpawnCamp.git
 - [ ] Modo pantalla completa
 - [ ] Perfil de usuario
 - [ ] Sistema de logros
-- [ ] Más juegos originales SpawnCamp
+- [ ] Más juegos originales Spawncamp
 
 ---
 
@@ -102,5 +104,5 @@ git clone https://github.com/Jeuri-Ddz/SpawnCamp.git
 **Dbx** — [ArnauDbx3](https://github.com/ArnauDbx3)
 
 <p align="center">
-  Hecho con 🎮 por el equipo SpawnCamp
+  Hecho con 🎮 por el equipo Spawncamp
 </p>
