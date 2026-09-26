@@ -364,7 +364,7 @@ const PST={
 // ═══════════════════════════════════════
 // GAME STATE
 // ═══════════════════════════════════════
-let G, cells=[], savedScores={w:0,b:0};
+let G, cells=[], savedScores={w:0,b:0}, flipped=false;
 
 function newG(mode,diff){
   G={
@@ -568,18 +568,30 @@ function finishTurnChecks(){
 // ═══════════════════════════════════════
 function buildBoard(){
   const bd=document.getElementById('board'); bd.innerHTML=''; cells=[];
+  for(let i=0;i<8;i++) cells[i]=new Array(8).fill(null);
   const ct=document.getElementById('ctop'),cb=document.getElementById('cbot');
   const cl=document.getElementById('cleft'),cr=document.getElementById('cright');
   ct.innerHTML=cb.innerHTML=cl.innerHTML=cr.innerHTML='';
-  FILES.forEach(f=>{[ct,cb].forEach(el=>{const d=document.createElement('div');d.className='coord-lbl';d.textContent=f;el.appendChild(d)})});
-  RANKS.forEach(rk=>{[cl,cr].forEach(el=>{const d=document.createElement('div');d.className='coord-side';d.textContent=rk;el.appendChild(d)})});
-  for(let r=0;r<8;r++){
-    cells[r]=[];
-    for(let c=0;c<8;c++){
+
+  // Coordinate labels follow the visual (flipped or not) order
+  for(let gc=0;gc<8;gc++){
+    const boardC=flipped?7-gc:gc;
+    [ct,cb].forEach(el=>{const d=document.createElement('div');d.className='coord-lbl';d.textContent=FILES[boardC];el.appendChild(d)});
+  }
+  for(let gr=0;gr<8;gr++){
+    const boardR=flipped?7-gr:gr;
+    [cl,cr].forEach(el=>{const d=document.createElement('div');d.className='coord-side';d.textContent=RANKS[boardR];el.appendChild(d)});
+  }
+
+  // Board cells: DOM order follows visual grid, but each cell is bound to its real board coordinate
+  for(let gr=0;gr<8;gr++){
+    for(let gc=0;gc<8;gc++){
+      const r=flipped?7-gr:gr, c=flipped?7-gc:gc;
       const cell=document.createElement('div');
       cell.className='cell '+((r+c)%2===0?'light':'dark');
       cell.addEventListener('click',()=>onCell(r,c));
-      bd.appendChild(cell); cells[r][c]=cell;
+      bd.appendChild(cell);
+      cells[r][c]=cell;
     }
   }
 }
@@ -822,6 +834,7 @@ function handleNetData(data){
   if(data.type==='rematch-start'){
     online.myColor=data.yourColor;
     closeModal('over-modal');
+    flipped=(online.myColor==='b');
     newG('online',null); initPieces(); buildBoard(); updateAll();
     setupOnlinePanel();
     finishTurnChecks();
@@ -980,6 +993,7 @@ function closeModal(id){document.getElementById(id).classList.remove('open')}
 // ═══════════════════════════════════════
 function startGame(mode,diff){
   savedScores=G?{...G.scores}:{w:0,b:0};
+  flipped=(mode==='online'&&online.myColor==='b');
   newG(mode,diff); initPieces(); buildBoard(); updateAll();
   document.getElementById('alert-bar').className='alert-bar';
   closeModal('over-modal');
@@ -1012,6 +1026,7 @@ function restartGame(){
         const hostColor=Math.random()<0.5?'w':'b';
         online.myColor=hostColor;
         sendData({type:'rematch-start',yourColor:hostColor==='w'?'b':'w'});
+        flipped=(online.myColor==='b');
         newG('online',null); initPieces(); buildBoard(); updateAll();
         setupOnlinePanel(); closeModal('over-modal'); finishTurnChecks();
       }
