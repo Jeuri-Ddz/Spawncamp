@@ -11,20 +11,20 @@
 
 ## 🕹️ Demo en vivo
 
-🔗 **[Jugar ahora →[#Spawncamp.com
+🔗 **Jugar ahora → [spawncamp.com
 ](https://jeuri-ddz.github.io/Spawncamp/)**
 
 ---
 
 ## ✨ Características
 
-- **Carrusel dinámico** — navegación fluida estilo consola moderna
-- **Fondo reactivo** — el color cambia según el juego seleccionado
-- **Sonido inmersivo** — efectos de audio sintetizados (Web Audio API), sin archivos externos
-- **Navegación híbrida** — teclado, click, arrastre y touch
-- **Animación de inicio** — splash screen al cargar
-- **Diseño oscuro neón** — estética gaming profesional
-- **100% un solo archivo** — todo el CSS y JS unificado en `index.html`
+- **Carrusel dinámico** - navegación fluida estilo consola moderna
+- **Fondo reactivo** - el color cambia según el juego seleccionado
+- **Sonido inmersivo** - efectos de audio sintetizados (Web Audio API), sin archivos externos
+- **Navegación híbrida** - teclado, click, arrastre y touch
+- **Animación de inicio** - splash screen al cargar
+- **Diseño oscuro neón** - estética gaming profesional
+- **100% un solo archivo** - todo el CSS y JS unificado en `index.html`
 
 ---
 
@@ -42,17 +42,6 @@
 | 🎯 Hitmarker | Aim trainer | ⌛ Work in progress... |
 
 ---
-
-## 📁 Estructura del proyecto
-
-```
-SpawnCamp/
-├── index.html       # Consola principal (todo en uno)
-├── juegos/
-│   ├── snake.png    #  Snake Matrix
-│   └── storm.png    # Pixel Storm
-└── README.md
-```
 
 ---
 
