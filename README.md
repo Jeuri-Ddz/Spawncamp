@@ -89,11 +89,11 @@ git clone https://github.com/Jeuri-Ddz/SpawnCamp.git
 
 ---
 
-## 👤 Autor
+## 👤 Autores
 
-**JDdz** — [@Jeuri-Ddz](https://github.com/Jeuri-Ddz) 
+**JDdz** - [@Jeuri-Ddz](https://github.com/Jeuri-Ddz) 
 
-**Dbx** — [ArnauDbx3](https://github.com/ArnauDbx3)
+**Dbx** - [ArnauDbx3](https://github.com/ArnauDbx3)
 
 <p align="center">
   Hecho con 🎮 por el equipo Spawncamp
