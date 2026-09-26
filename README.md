@@ -99,7 +99,7 @@ git clone https://github.com/Jeuri-Ddz/SpawnCamp.git
 
 **JDdz** — [@Jeuri-Ddz](https://github.com/Jeuri-Ddz) 
 
-**Dbx** — [ArnauDbx3z](https://github.com/ArnauDbx3)
+**Dbx** — [ArnauDbx3](https://github.com/ArnauDbx3)
 
 <p align="center">
   Hecho con 🎮 por el equipo SpawnCamp
