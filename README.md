@@ -38,6 +38,7 @@
 | 🧩 Runecraft | Puzzle highscore | ✅ Disponible |
 | 🥊 Stick Fighter | Fighting game | ⌛ Work in progress... |
 | 🚩 Geometry Jump | Platformer | ⌛ Work in progress... |
+| ♟️ Pixel Chess | Board game | ✅ Disponible |
 
 ---
 
