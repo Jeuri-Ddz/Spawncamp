@@ -35,8 +35,9 @@
 | 🐍 Snake Matrix | Retro Arcade | ✅ Disponible |
 | 🚀 Pixel Storm | Bullet Hell | ✅ Disponible |
 | 💥 Bouncers | 4-player PvP | ✅ Disponible |
-| 🧧 Runecraft | Puzzle highscore | ✅ Disponible |
+| 🧩 Runecraft | Puzzle highscore | ✅ Disponible |
 | 🥊 Stick Fighter | Fighting game | ⌛ Work in progress... |
+| 🚩 Geometry Jump | Platformer | ⌛ Work in progress... |
 
 ---
 
